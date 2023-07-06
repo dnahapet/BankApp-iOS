@@ -21,7 +21,10 @@ class AccountSummaryViewModel: ObservableObject {
                 case .success(let accounts):
                     if let accounts = accounts {
                         self._accountsModels = accounts
-                        self.accounts = accounts.map(AccountViewModel.init)
+
+                        DispatchQueue.main.async {
+                            self.accounts = accounts.map(AccountViewModel.init)
+                        }
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
@@ -41,7 +44,7 @@ class AccountViewModel {
         self.account.name
     }
 
-    var id: String {
+    var accountId: String {
         self.account.id
     }
 

@@ -17,6 +17,7 @@
 		1F6F23312A54E33F007F82A1 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F232B2A54E33F007F82A1 /* AccountService.swift */; };
 		1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */; };
 		1FEE66352A5656CC006CFA76 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */; };
+		1FEE66372A5659F1006CFA76 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66362A5659F1006CFA76 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1F6F232B2A54E33F007F82A1 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
 		1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		1FEE66362A5659F1006CFA76 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		1F6F23222A54E33E007F82A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FEE66362A5659F1006CFA76 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				1F6F23152A54E2BB007F82A1 /* Bank_AppApp.swift in Sources */,
 				1F6F23312A54E33F007F82A1 /* AccountService.swift in Sources */,
 				1F6F232F2A54E33F007F82A1 /* Double+Extensions.swift in Sources */,
+				1FEE66372A5659F1006CFA76 /* AccountView.swift in Sources */,
 				1F6F23302A54E33F007F82A1 /* Account.swift in Sources */,
 				1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */,
 			);

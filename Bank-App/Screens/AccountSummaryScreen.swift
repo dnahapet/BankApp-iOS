@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct AccountSummaryScreen: View {
+    @ObservedObject var accountSummaryVM: AccountSummaryViewModel = AccountSummaryViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            GeometryReader { g in
+                VStack {
+                    AccountView(accounts: self.accountSummaryVM.accounts)
+                        .frame(height: g.size.height/2)
+                    Text("\(self.accountSummaryVM.total.formatAsCurrency())")
+                    Spacer()
+                }
+            }
+        }
+        .onAppear {
+            self.accountSummaryVM.getAllAccounts()
+        }
+        .navigationTitle("Account Summary")
+        .embedInNavigationView()
     }
 }
 

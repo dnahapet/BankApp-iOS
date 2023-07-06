@@ -29,11 +29,9 @@ class AccountService {
             }
 
             if let accounts = try? JSONDecoder().decode([Account].self, from: data) {
-                print("Accounts: \(accounts)")
                 completion(.success(accounts))
             }
             else {
-                print("Failure")
                 completion(.failure(.badDecoding))
             }
         }.resume()
