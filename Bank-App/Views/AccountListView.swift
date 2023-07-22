@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AccountView: View {
+struct AccountListView: View {
     let accounts: [AccountViewModel]
 
     var body: some View {

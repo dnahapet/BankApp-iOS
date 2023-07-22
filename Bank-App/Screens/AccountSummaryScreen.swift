@@ -14,7 +14,7 @@ struct AccountSummaryScreen: View {
         VStack {
             GeometryReader { g in
                 VStack {
-                    AccountView(accounts: self.accountSummaryVM.accounts)
+                    AccountListView(accounts: self.accountSummaryVM.accounts)
                         .frame(height: g.size.height/2)
                     Text("\(self.accountSummaryVM.total.formatAsCurrency())")
                     Spacer()
