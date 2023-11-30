@@ -15,6 +15,9 @@
 		1F6F232F2A54E33F007F82A1 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F23272A54E33E007F82A1 /* Double+Extensions.swift */; };
 		1F6F23302A54E33F007F82A1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F23292A54E33E007F82A1 /* Account.swift */; };
 		1F6F23312A54E33F007F82A1 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F232B2A54E33F007F82A1 /* AccountService.swift */; };
+		1F79AA2F2B192E6600FDB319 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA2E2B192E6600FDB319 /* CreateAccountRequest.swift */; };
+		1F79AA312B192F0200FDB319 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA302B192F0200FDB319 /* CreateAccountResponse.swift */; };
+		1F79AA332B1932B200FDB319 /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA322B1932B200FDB319 /* AddAccountViewModel.swift */; };
 		1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */; };
 		1FEE66352A5656CC006CFA76 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */; };
 		1FEE66372A5659F1006CFA76 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66362A5659F1006CFA76 /* AccountListView.swift */; };
@@ -30,6 +33,9 @@
 		1F6F23272A54E33E007F82A1 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		1F6F23292A54E33E007F82A1 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		1F6F232B2A54E33F007F82A1 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		1F79AA2E2B192E6600FDB319 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		1F79AA302B192F0200FDB319 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
+		1F79AA322B1932B200FDB319 /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
 		1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
 		1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		1FEE66362A5659F1006CFA76 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				1F6F23292A54E33E007F82A1 /* Account.swift */,
+				1F79AA2E2B192E6600FDB319 /* CreateAccountRequest.swift */,
+				1F79AA302B192F0200FDB319 /* CreateAccountResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */,
+				1F79AA322B1932B200FDB319 /* AddAccountViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -210,11 +219,14 @@
 				1F6F232E2A54E33F007F82A1 /* URL+Extensions.swift in Sources */,
 				1F6F232D2A54E33F007F82A1 /* View+Extensions.swift in Sources */,
 				1F6F23152A54E2BB007F82A1 /* Bank_AppApp.swift in Sources */,
+				1F79AA312B192F0200FDB319 /* CreateAccountResponse.swift in Sources */,
 				1F6F23312A54E33F007F82A1 /* AccountService.swift in Sources */,
+				1F79AA332B1932B200FDB319 /* AddAccountViewModel.swift in Sources */,
 				1F6F232F2A54E33F007F82A1 /* Double+Extensions.swift in Sources */,
 				1FEE66372A5659F1006CFA76 /* AccountListView.swift in Sources */,
 				1F6F23302A54E33F007F82A1 /* Account.swift in Sources */,
 				1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */,
+				1F79AA2F2B192E6600FDB319 /* CreateAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
