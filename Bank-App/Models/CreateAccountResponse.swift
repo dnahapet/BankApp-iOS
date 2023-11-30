@@ -9,5 +9,5 @@ import Foundation
 
 struct CreateAccountResponse: Codable {
     let result: Bool
-    let error: NetworkError
+    let error: String
 }

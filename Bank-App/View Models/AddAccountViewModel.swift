@@ -8,9 +8,9 @@
 import Foundation
 
 class AddAccountViewModel: ObservableObject {
-    let name: String = ""
-    let accountType: AccountType = .checking
-    let balance: String = ""
+    var name: String = ""
+    var accountType: AccountType = .checking
+    var balance: String = ""
     @Published var errorMessage: String = ""
 }
 
@@ -20,7 +20,7 @@ extension AddAccountViewModel {
     }
 
     private var isBalanceValid: Bool {
-        guard let accountBalance = Double(balance) else {
+        guard !balance.isEmpty, let accountBalance = Double(balance) else {
             return false
         }
 
@@ -39,7 +39,9 @@ extension AddAccountViewModel {
         }
 
         if !errors.isEmpty {
-            self.errorMessage = errors.joined(separator: "\n")
+            DispatchQueue.main.async {
+                self.errorMessage = errors.joined(separator: "\n")
+            }
             return false
         }
 
@@ -57,7 +59,23 @@ extension AddAccountViewModel {
         let createAccountReq = CreateAccountRequest(name: name, accountType: accountType.rawValue, balance: Double(balance)!)
 
         AccountService.shared.createAccount(createAccountRequest: createAccountReq) { result in
-            
+            switch result {
+            case let .success(response):
+                if response.result {
+                    completion(true)
+                }
+                else {
+                    DispatchQueue.main.async {
+                        self.errorMessage = response.error
+                    }
+                    completion(false)
+                }
+            case let .failure(error):
+                DispatchQueue.main.async {
+                    self.errorMessage = error.localizedDescription
+                }
+                completion(false)
+            }
         }
     }
 }

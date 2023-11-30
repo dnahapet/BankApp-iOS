@@ -18,6 +18,7 @@
 		1F79AA2F2B192E6600FDB319 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA2E2B192E6600FDB319 /* CreateAccountRequest.swift */; };
 		1F79AA312B192F0200FDB319 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA302B192F0200FDB319 /* CreateAccountResponse.swift */; };
 		1F79AA332B1932B200FDB319 /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA322B1932B200FDB319 /* AddAccountViewModel.swift */; };
+		1F79AA352B193EAB00FDB319 /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AA342B193EAB00FDB319 /* AddAccountScreen.swift */; };
 		1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */; };
 		1FEE66352A5656CC006CFA76 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */; };
 		1FEE66372A5659F1006CFA76 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE66362A5659F1006CFA76 /* AccountListView.swift */; };
@@ -36,6 +37,7 @@
 		1F79AA2E2B192E6600FDB319 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		1F79AA302B192F0200FDB319 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		1F79AA322B1932B200FDB319 /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
+		1F79AA342B193EAB00FDB319 /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
 		1FEE66322A565399006CFA76 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
 		1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		1FEE66362A5659F1006CFA76 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1FEE66342A5656CC006CFA76 /* AccountSummaryScreen.swift */,
+				1F79AA342B193EAB00FDB319 /* AddAccountScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				1F6F232F2A54E33F007F82A1 /* Double+Extensions.swift in Sources */,
 				1FEE66372A5659F1006CFA76 /* AccountListView.swift in Sources */,
 				1F6F23302A54E33F007F82A1 /* Account.swift in Sources */,
+				1F79AA352B193EAB00FDB319 /* AddAccountScreen.swift in Sources */,
 				1FEE66332A565399006CFA76 /* AccountSummaryViewModel.swift in Sources */,
 				1F79AA2F2B192E6600FDB319 /* CreateAccountRequest.swift in Sources */,
 			);
